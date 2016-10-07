@@ -9,4 +9,13 @@ class Hello extends React.Component {
     );
   }
 };
+
+Hello.propTypes ={
+  txt: React.PropTypes.string,
+  cat: React.PropTypes.number.isRequired
+}
+
+Hello.defaultProps={
+  txt: 'this is the default';
+}
 export default Hello
